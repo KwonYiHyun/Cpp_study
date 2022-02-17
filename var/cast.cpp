@@ -16,5 +16,4 @@ int main(){
     // static_cast<type>
 
     cout<<static_cast<int>(ch)<<endl;
-
 }

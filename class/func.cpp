@@ -1,7 +1,7 @@
 #include "Stock.h";
 #include <iostream>
 
-// Stockí´ë˜ìŠ¤ì˜ ì‚¬ìš©ë²”ìœ„ì— ê²°ì •ëœë‹¤.
+// StockÅ¬·¡½ºÀÇ »ç¿ë¹üÀ§¿¡ °áÁ¤µÈ´Ù.
 void Stock::acquire(string co, int n, float pr){
     name=co;
     shares=n;
@@ -27,15 +27,24 @@ void Stock::update(float pr){
 }
 
 void Stock::show(){
-    cout<<"íšŒì‚¬ ëª… : "<<name<<endl;
-    cout<<"ì£¼ì‹ ìˆ˜ : "<<shares<<endl;
-    cout<<"ì£¼ê°€ : "<<share_val<<endl;
-    cout<<"ì£¼ì‹ ì´ ê°€ì¹˜ : "<<total_val<<endl;
+    cout<<"È¸»ç ¸í : "<<name<<endl;
+    cout<<"ÁÖ½Ä ¼ö : "<<shares<<endl;
+    cout<<"ÁÖ°¡ : "<<share_val<<endl;
+    cout<<"ÁÖ½Ä ÃÑ °¡Ä¡ : "<<total_val<<endl;
 }
 
-// ì‚¬ìš© ë²”ìœ„ ê²°ì • ì—°ì‚°ì ::
-// "Stockí´ë˜ìŠ¤ì— ì •ì˜ë˜ì–´ ìˆëŠ” í•¨ìˆ˜ë‹¤" ë¼ê³  ì•Œë ¤ì¤€ë‹¤
-// ìƒì„±ì
+Stock Stock::topval(Stock& s){
+    if(s.share_val > share_val){
+        return s;
+    }else{
+        // this´Â ¸â¹öÇÔ¼ö¸¦ È£ÃâÇÏ´Âµ¥ »ç¿ëµÈ °´Ã¼¸¦ Áö½ÃÇÑ´Ù.
+        return *this;
+    }
+}
+
+// »ç¿ë ¹üÀ§ °áÁ¤ ¿¬»êÀÚ ::
+// "StockÅ¬·¡½º¿¡ Á¤ÀÇµÇ¾î ÀÖ´Â ÇÔ¼ö´Ù" ¶ó°í ¾Ë·ÁÁØ´Ù
+// »ı¼ºÀÚ
 Stock::Stock(string co, int n, float pr)
 {
     name=co;
@@ -51,10 +60,10 @@ Stock::Stock(){
     set_total();
 }
 
-// íŒŒê´´ì(C# ì†Œë©¸ì)
-// ê°ì²´ì˜ ìˆ˜ëª…ì´ ëë‚˜ëŠ” ì‹œì ì—ì„œ íŒŒê´´ìê°€ ìë™ìœ¼ë¡œ í˜¸ì¶œëœë‹¤.
-// íŒŒê´´ìëŠ” ë§¤ê°œë³€ìˆ˜ë¥¼ ê°€ì§ˆ ìˆ˜ ì—†ë‹¤.
+// ÆÄ±«ÀÚ(C# ¼Ò¸êÀÚ)
+// °´Ã¼ÀÇ ¼ö¸íÀÌ ³¡³ª´Â ½ÃÁ¡¿¡¼­ ÆÄ±«ÀÚ°¡ ÀÚµ¿À¸·Î È£ÃâµÈ´Ù.
+// ÆÄ±«ÀÚ´Â ¸Å°³º¯¼ö¸¦ °¡Áú ¼ö ¾ø´Ù.
 Stock::~Stock()
 {
-    cout<<name<<"í´ë˜ìŠ¤ê°€ ì†Œë©¸ë˜ì—ˆìŠµë‹ˆë‹¤."<<endl;
+    cout<<name<<"Å¬·¡½º°¡ ¼Ò¸êµÇ¾ú½À´Ï´Ù."<<endl;
 }

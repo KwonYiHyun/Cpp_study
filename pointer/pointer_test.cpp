@@ -19,5 +19,4 @@ int main(){
         cout<<i<<"번째 숫자 : "<<save[i]<<endl;
     }
     
-
 }

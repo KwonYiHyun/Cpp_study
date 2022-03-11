@@ -33,7 +33,7 @@ void Stock::show(){
     cout<<"ÁÖ½Ä ÃÑ °¡Ä¡ : "<<total_val<<endl;
 }
 
-Stock Stock::topval(Stock& s){
+Stock &Stock::topval(Stock& s){
     if(s.share_val > share_val){
         return s;
     }else{

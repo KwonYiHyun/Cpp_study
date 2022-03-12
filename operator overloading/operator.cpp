@@ -13,11 +13,11 @@ int main(){
 
     Time total;
     total=day1.operator+(day2);
-    // total=day1+day2;
+    total=day1+day2;
     total.show();
 
     Time total2;
-    total2=day1*day2;
+    total2=day1*3;
     total2.show();
 
 }

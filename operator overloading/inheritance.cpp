@@ -5,8 +5,10 @@ using namespace std;
 
 int main(){
 
-    NewTime temp1();
+    Time temp1(30, 2);
     NewTime temp2(3, 30, 2);
-    temp2.print();
+    
+    temp1.show();
+    temp2.show();
 
 }

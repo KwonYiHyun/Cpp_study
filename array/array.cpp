@@ -17,4 +17,5 @@ int main(){
     // 배열에 변수를 넣으려면 상수로 선언해야한다.
     const int size=15;
     char name[size];
+    
 }

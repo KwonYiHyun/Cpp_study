@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 struct MyStruct{
     string name;
     int age;
@@ -13,8 +12,8 @@ struct MyStruct{
 void display(MyStruct&);
 
 void display(MyStruct& temp){
-    cout<<"ÀÌ¸§ : "<<temp.name<<endl;
-    cout<<"³ªÀÌ : "<<temp.age<<endl;
+    cout<<"ï¿½Ì¸ï¿½ : "<<temp.name<<endl;
+    cout<<"ï¿½ï¿½ï¿½ï¿½ : "<<temp.age<<endl;
 }
 
 #endif

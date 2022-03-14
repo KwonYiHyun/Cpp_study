@@ -25,7 +25,8 @@ public:
     3. 상속을 위해 기초 클래스로 사용할 클래스를 정의할 때,
     파생 클래스에서 다시 정의해야 되는 클래스 메소드들은 가상 함수로 선언해야 한다.
     */
-    ~Time();
+    // NewTime의 소멸자도 동작시키기위해 기본클래스인 Time객체의 소멸자를 virtual시킨다.
+    virtual ~Time();
     int getHour() { return hours; }
     int getMins() { return mins; }
     /*

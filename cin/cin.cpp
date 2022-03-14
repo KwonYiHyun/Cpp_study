@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+
     const int size=15;
     char name1[size];
     char name2[size];
@@ -21,4 +22,5 @@ int main(){
     string str1;
     cin>>str1;
     cout<<"str1[0] = "<<str1[0]<<endl;
+    
 }

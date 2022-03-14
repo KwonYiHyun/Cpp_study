@@ -17,4 +17,5 @@ int main(){
     };
 
     cout<<A[0].height<<endl;
+    
 }

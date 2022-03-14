@@ -7,6 +7,7 @@ void swapB(int*, int*);
 void swapC(int, int);
 
 int main(){
+
     // 참조(reference)란?
     // 미리 정의된 변수의 실제 이름 대신 사용할 수 있는 대용 이름
     // 함수의 매개변수에 사용한다.
@@ -36,6 +37,7 @@ int main(){
     swapC(wallet1, wallet2);
     cout << "값을 이용한 교환 이후 상태\n";
     cout << "wallet1 = " << wallet1 << ", wallet2 = " << wallet2 << endl;
+    
 }
 
 // 참조로 전달

@@ -12,6 +12,7 @@ int main(){
     cout<<"정수를 입력하십시오. : "<<endl;
     cin>>times2;
     helloCPP(times, times2);
+    
 }
 
 void helloCPP(int n, int m){

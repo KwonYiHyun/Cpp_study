@@ -14,6 +14,7 @@ int main(){
     int sum=sumArr(arr, arr+SIZE);
 
     cout<<"SUM = "<<sum<<endl;
+    
 }
 
 int sumArr(int* begin, int* end){

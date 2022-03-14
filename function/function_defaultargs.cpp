@@ -12,10 +12,12 @@ const int SIZE=8;
 int sumArr(int*, int n=1);
 
 int main(){
+
     int arr[SIZE]={1,2,4,8,16,32,64};
     int sum=sumArr(arr);
 
     cout<<"รัวี "<<sum<<endl;
+    
 }
 
 int sumArr(int* arr, int n){

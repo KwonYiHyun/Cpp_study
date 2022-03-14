@@ -16,7 +16,6 @@ int main(){
 
     Time day1={5, 45};
     Time day2={4, 55};
-
     Time total=sum(&day1, &day2);
     cout<<"이틀간 소요 시간 : ";
     showTime(total);

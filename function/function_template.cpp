@@ -9,6 +9,7 @@ template <class Any>
 Any sum(int, Any);
 
 int main(){
+
     // 함수 템플릿 C#의 제네릭 문법과 유사한 것 같다.
     // 구체적인 데이터형을 포괄할 수 있는 일반형으로 함수를 정의
     int a=3;
@@ -21,6 +22,7 @@ int main(){
     cout<<sum(c,d)<<endl;
     
     cout<<sum(a,c)<<endl;
+    
 }
 
 template <class Any>

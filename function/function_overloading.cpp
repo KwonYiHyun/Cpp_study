@@ -6,6 +6,7 @@ int sum(int, int);
 float sum(float, float);
 
 int main(){
+
     // 함수의 다형
     // 다형 : 다양한 형태를 지닌다
     // 함수의 오버로딩
@@ -24,6 +25,7 @@ int main(){
     float c, d;
     cin >> c >> d;
     cout << "두 실수의 합은 " << sum(c, d) << "입니다.\n";
+    
 }
 
 int sum(int a, int b){

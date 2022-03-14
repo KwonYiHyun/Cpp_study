@@ -8,6 +8,7 @@ void cheers(int n);
 float circle(int x);
 
 int main(){
+
     int a;
     cout<<"수를 입력하세요 : "<<endl;
     cin>>a;
@@ -18,6 +19,7 @@ int main(){
     cin>>b;
     float c=circle(b);
     cout<<"원의 넓이 "<<c<<" 입니다."<<endl;
+    
 }
 
 // main함수 후 함수의 내용을 정의

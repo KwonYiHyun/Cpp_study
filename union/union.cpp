@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     
-    // 공용체(union)
+    // 공용체 (union)
     // 서로 다른 데이터형을 한 번에 한 가지만 보관할 수 있음.
 
     union MyUnion

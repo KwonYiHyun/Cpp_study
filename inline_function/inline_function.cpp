@@ -3,7 +3,7 @@
 using namespace std;
 
 // inline키워드를 붙이고 바로 함수의 내용을 정의하면 inline함수로 동작하게 된다.
-inline float square(float x){return x*x;}
+inline float square(float x){ return x*x; }
 
 int main(){
 

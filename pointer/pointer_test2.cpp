@@ -12,4 +12,5 @@ int main(){
     *pr=5;
 
     cout<<*pr<<endl;
+    
 }

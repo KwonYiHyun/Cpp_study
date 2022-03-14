@@ -3,7 +3,7 @@
 using namespace std;
 
 struct MyStruct{
-    char name[20]  ;
+    char name[20];
     int age;
 };
 

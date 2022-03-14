@@ -1,8 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
-// strcpy사용을 위한 헤더
-#include <string.h>
+#include <string.h> // strcpy사용을 위한 헤더
 
 #define SIZE 20
 

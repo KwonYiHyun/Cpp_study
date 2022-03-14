@@ -28,4 +28,5 @@ int main(){
     *b=*b+1;
 
     cout<<"이제 a의 값은 : "<<a<<endl;
+    
 }

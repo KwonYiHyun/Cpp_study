@@ -12,7 +12,6 @@ private:
     float share_val;
     double total_val;
     void set_total(){total_val=shares*share_val;}
-
 public:
     void acquire(string, int, float);
     void buy(int, float);

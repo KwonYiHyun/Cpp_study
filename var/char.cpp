@@ -12,4 +12,5 @@ int main(){
     // string의 경우 명시적으로 null문자가 포함되어 있다.
     cout<<b<<" "<<c<<endl;
     cout<<d<<endl;
+    
 }

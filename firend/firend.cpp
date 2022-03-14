@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
- 
+
 class Friend1 {
 private:
     string name;
